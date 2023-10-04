@@ -3,10 +3,10 @@ package e_commerce;
 public class Article {
     private String code;
     private String description;
-    private int price;
+    private double price;
     private int quantity;
 
-    public Article(String code, int price, int quantity) {
+    public Article(String code, double price, int quantity) {
         this.code = code;
         this.description = "...";
         this.price = price;
@@ -29,11 +29,11 @@ public class Article {
         this.description = description;
     }
 
-    public int getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 

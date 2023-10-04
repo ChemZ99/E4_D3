@@ -14,7 +14,11 @@ public class Rectangle {
     }
 
     public void setHeight(int height) {
-        this.height = height;
+        if ( height > 0 ) {
+            this.height = height;
+        }else {
+            System.err.println("error");
+        }
     }
 
     public int getWidth() {
@@ -22,7 +26,11 @@ public class Rectangle {
     }
 
     public void setWidth(int width) {
-        this.width = width;
+        if ( width > 0) {
+            this.width = width;
+        } else {
+            System.err.println("error");
+        }
     }
 
     public int Perimeter() {
